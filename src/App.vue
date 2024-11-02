@@ -2,10 +2,10 @@
     <Toast />
     <ConfirmDialog></ConfirmDialog>
     <div class="flex w-screen h-screen surface-900 justify-content-center">
-        <div class="w-full sm:w-30rem surface-200">
+        <div class="w-full sm:w-30rem h-screen surface-200">
             <!-- top bar -->
             <div
-                class="h-5rem bg-indigo-900 flex justify-content-between align-items-center p-3"
+                class="h-5rem w-full bg-indigo-900 flex justify-content-between align-items-center p-3"
             >
                 <div class="text-2xl font-bold text-white">Simple Notepad</div>
 
@@ -19,7 +19,7 @@
             <!-- note list -->
             <div
                 class="p-3 overflow-y-auto flex flex-column gap-3"
-                style="height: 40rem"
+                style="height: 85%"
             >
                 <div v-for="note in notes">
                     <Card>
@@ -239,7 +239,7 @@ export default {
                 rejectClass: "p-button-secondary p-button-outlined",
                 acceptClass: "p-button-danger",
                 accept: () => {
-                    this.confirmDelete(id)
+                    this.confirmDelete(id);
                 },
             });
         },

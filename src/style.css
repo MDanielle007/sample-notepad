@@ -1,4 +1,15 @@
-body {
+/* Order */
+@layer reset, primevue;
+
+/* Reset CSS */
+@layer reset {
+    button,
+    input {
+        /* CSS to Reset */
+    }
+}
+
+body{
     padding: 0;
     margin: 0;
 }
